@@ -1,6 +1,6 @@
 <!ELEMENT restaurants (restaurant+)>
-<!ELEMENT restaurant (name, cuisine, city, open, close)>
-<!ATTLIST restaurant id ID #REQUIRED>
+<!ELEMENT restaurant (id, name, cuisine, city, open, close)>
+<!ELEMENT id (#PCDATA)> /
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT cuisine (#PCDATA)>
 <!ELEMENT city (#PCDATA)>
