@@ -23,7 +23,7 @@
             <h1>My favorite cafes</h1>
         </header>
         <!--Here is where the table will be loaded in.  The actual table will be loaded in JavaScript.-->
-        <section class="mt-5 text-center mx-auto">
+        <section class="mt-5 text-center">
             <div id="showDataJSON"></div>
         </section>
     </body>
@@ -48,6 +48,7 @@
                 var jsonTable = document.createElement("table");
                 var tr = jsonTable.insertRow(-1);   
                 jsonTable.style.width = "75%";
+                jsonTable.style.margin = "0 auto";
                 let root;
                 for (let prop in data) {
                     root = prop;
